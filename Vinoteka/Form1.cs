@@ -16,5 +16,23 @@ namespace Vinoteka
         {
             InitializeComponent();
         }
+
+        private void artikliToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Artikli artikli = new Artikli();
+            artikli.ShowDialog();
+        }
+
+        private void lagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Musterija musterija = new Musterija();
+            musterija.ShowDialog();
+        }
+
+        private void lagerToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Lager lager = new Lager();
+            lager.ShowDialog();
+        }
     }
 }

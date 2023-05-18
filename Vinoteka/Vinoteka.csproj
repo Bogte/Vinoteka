@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,16 +47,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Artikli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Artikli.Designer.cs">
+      <DependentUpon>Artikli.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Konekcija.cs" />
+    <Compile Include="Lager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lager.Designer.cs">
+      <DependentUpon>Lager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musterija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musterija.Designer.cs">
+      <DependentUpon>Musterija.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Artikli.resx">
+      <DependentUpon>Artikli.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lager.resx">
+      <DependentUpon>Lager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musterija.resx">
+      <DependentUpon>Musterija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
